@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.use(session({
     secret: process.env.SESSION_SECRET || 'a wildly insecure secret',
-    resave: false,
+    resave: false, 
     saveUninitialized: false
 }))
 app.use(passport.initialize())
